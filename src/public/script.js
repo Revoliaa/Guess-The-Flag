@@ -54,7 +54,7 @@ const submitAnswer = () => {
             }
 
             title.innerHTML = "You lose";
-            subTitle.innerHTML = "Press start button to try again";
+            subTitle.innerHTML = "Press button to try again";
             startBtn.innerHTML = "Try Again";
             modalContainer.style.zIndex = 10;
             modal.style.display = "flex";
