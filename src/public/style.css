@@ -1,0 +1,218 @@
+/* Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* Resets */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Color Palette */
+:root {
+    --black: #000000;
+    --bg: #2a292b;
+    --dark-gray: #363537;
+    --white: #ffffff;
+    --main: #0094c6;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background: var(--bg);
+}
+
+h1 {
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    min-height: 860px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+section {
+    max-height: 800px;
+    max-width: 800px;
+    min-height: 800px;
+    min-width: 260px;
+    height: 100%;
+    width: 100%;
+    margin: 30px;
+    background-color: var(--dark-gray);
+    box-shadow: 0px 0px 10px 3px var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info {
+    max-height: 70px;
+    max-width: 640px;
+    min-width: 240px;
+    height: 100%;
+    width: 100%;
+    margin-top: 50px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.question {
+    max-height: 550px;
+    max-width: 640px;
+    min-width: 240px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flag {
+    max-width: 360px;
+    min-width: 240px;
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+.answer {
+    max-height: 40px;
+    max-width: 640px;
+    min-width: 240px;
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.answerInput {
+    height: 100%;
+    width: calc(100% - 80px);
+    font-size: 24px;
+    border-right: 2px solid var(--dark-gray)
+}
+
+.submitBtn {
+    height: 100%;
+    width: 80px;
+    font-size: 18px;
+    background-color: var(--white);
+    transition: all 0.3s;
+}
+
+.submitBtn:hover {
+    background-color: var(--main);
+    color: var(--white)
+}
+
+.modalContainer {
+    max-height: 100%;
+    max-width: 100%;
+    min-height: 800px;
+    min-width: 260px;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+    position: absolute;
+    z-index: 10;
+}
+
+.modal {
+    background-color: var(--dark-gray);
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.modal>h2 {
+    font-size: 34px;
+}
+
+.modal>h3 {
+    font-size: 28px;
+}
+
+.startBtn {
+    height: 60px;
+    width: 180px;
+    font-size: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.startBtn:hover {
+    background-color: var(--main);
+    color: var(--white);
+}
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .answerInput {
+        font-size: 18px;
+    }
+
+    .modal>h2 {
+        font-size: 26px;
+    }
+
+    .modal>h3 {
+        font-size: 20px;
+    }
+
+    .startBtn {
+        height: 50px;
+        width: 150px;
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .info {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}

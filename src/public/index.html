@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Flag Guesser</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="info">
+                <div class="scoreDiv">
+                    <h2>High Score: <span class="highScore"></span></h2>
+                    <h2>Score: <span class="score"></span></h2>
+                </div>
+                <div class="healthDiv">
+                    <h2>Health: <span class="health"></span></h2>
+                </div>
+            </div>
+            <div class="question">
+                <img src="" alt="Flag" class="flag">
+                <div class="answer">
+                    <input type="text" placeholder="Country" class="answerInput">
+                    <button class="submitBtn">Check</button>
+                </div>
+            </div>
+        </section>
+        <div class="modalContainer">
+            <section class="modal">
+                <h2 class="title">Flag Guessing Game</h2>
+                <h3 class="subTitle">Press button to start</h3>
+                <button class="startBtn">Start</button>
+            </section>
+        </div>
+    </main>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
