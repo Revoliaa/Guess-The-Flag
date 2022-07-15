@@ -5,40 +5,62 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Revolia" />
+    <meta name="description" content="Guess The Flag" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, Flag, Game, Flag Game, Guess The Flag, Flag Guessing" />
+    <meta name="og:title" content="Guess The Flag" />
+    <meta name="og:description" content="Guess The Flag" />
+
     <link rel="shortcut icon" href="assets/favicon.ico?v=1.1" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Flag Guesser</title>
+
+    <script defer type="module" src="script.js"></script>
+    <title>Guess The Flag</title>
 </head>
 
 <body>
     <main>
-        <section>
-            <div class="info">
-                <div class="scoreDiv">
-                    <h2>High Score: <span class="highScore"></span></h2>
-                    <h2>Score: <span class="score"></span></h2>
+        <section class="startScreen">
+            <div class="title">
+                <h1>Guess The Flag</h1>
+                <h3>Press the button to start</h3>
+            </div>
+            <button class="startBtn">Start</button>
+        </section>
+
+        <section class="gameScreen">
+            <div class="information">
+                <div class="leftInformation">
+                    <p>High Score: <span class="highScore"></span></p>
+                    <p>Score: <span class="score"></span></p>
                 </div>
-                <div class="healthDiv">
-                    <h2>Health: <span class="health"></span></h2>
+                <div class="rightInformation">
+                    <p>Health: <span class="health"></span></p>
                 </div>
             </div>
-            <div class="question">
-                <img src="" alt="Flag" class="flag">
-                <div class="answer">
-                    <input type="text" placeholder="Country" class="answerInput">
-                    <button class="submitBtn">Check</button>
+            <img src="" alt="Flag" class="flag">
+            <div class="answers">
+                <div class="leftAnswers">
+                    <button class="option1"></button>
+                    <button class="option2"></button>
+                </div>
+                <div class="leftAnswers">
+                    <button class="option3"></button>
+                    <button class="option4"></button>
                 </div>
             </div>
         </section>
-        <div class="modalContainer">
-            <section class="modal">
-                <h2 class="title">Flag Guessing Game</h2>
-                <h3 class="subTitle">Press button to start</h3>
-                <button class="startBtn">Start</button>
-            </section>
-        </div>
+
+        <section class="endScreen">
+            <h1>You Lose</h1>
+            <h3>Your score is: <span class="endScore"></span></h3>
+            <button class="tryAgain">Try Again</button>
+        </section>
     </main>
-    <script type="module" src="script.js"></script>
+    <footer>
+        <p>Copyright &copy; Guess The Flag</p>
+        <p>Designed and maded by <a href="https://github.com/revoliaa" target="_blank">Revolia</a></p>
+    </footer>
 </body>
 
 </html>
