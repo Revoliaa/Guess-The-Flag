@@ -68,8 +68,6 @@ const getRandomFlag = () => {
                 countryName = countries[random].name;
                 answer.innerHTML = countryName;
             });
-
-            console.log(res["0"].name.common);
         });
 };
 
