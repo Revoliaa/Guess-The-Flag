@@ -57,6 +57,11 @@ const getRandomFlag = () => {
     let random = Math.floor(Math.random() * countries.length);
     countryName = countries[random].name;
 
+    const getDifferentAnswer = () => {
+        let random = Math.floor(Math.random() * countries.length + 1);
+        return countries?.[random]?.name;
+    };
+
     fetch(`https://restcountries.com/v3.1/name/${countryName}`)
         .then((res) => res.json())
         .then((res) => {
@@ -65,7 +70,7 @@ const getRandomFlag = () => {
 
             wrongAnswers.forEach((answer) => {
                 let random = Math.floor(Math.random() * countries.length + 1);
-                countryName = countries[random].name;
+                countryName = countries?.[random]?.name ?? getDifferentAnswer();
                 answer.innerHTML = countryName;
             });
         });
